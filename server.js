@@ -31,8 +31,8 @@ app.use(helmet({
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-domain.com', 'https://www.your-domain.com'] 
-    : ['http://localhost:5173', 'http://127.0.0.1:3000'],
+    ? ['https://your-domain.com', 'https://www.your-domain.com', 'https://meek-dodol-87ee37.netlify.app'] 
+    : ['http://localhost:5173', 'http://127.0.0.1:3000', 'https://meek-dodol-87ee37.netlify.app'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']

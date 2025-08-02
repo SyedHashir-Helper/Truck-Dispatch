@@ -1,0 +1,44 @@
+{
+  "name": "valhalla-logistics-app",
+  "version": "1.0.0",
+  "description": "Valhalla Logistics Broker/Carrier Agreement System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "start": "concurrently \"npm run server:start\" \"npm run client:start\"",
+    "build": "npm run client:build",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "client:dev": "cd client && npm start",
+    "client:start": "cd client && npm run build && serve -s build",
+    "client:build": "cd client && npm run build",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "clean": "rm -rf node_modules client/node_modules server/node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "logistics",
+    "broker",
+    "carrier",
+    "agreement",
+    "transportation"
+  ],
+  "author": "Valhalla Logistics LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/valhalla-logistics-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/valhalla-logistics-app/issues"
+  },
+  "homepage": "https://github.com/your-username/valhalla-logistics-app#readme"
+}
